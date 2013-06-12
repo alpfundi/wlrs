@@ -12,7 +12,13 @@ layout: base
   <article id="sample_post" class="post">
     <div id="datebar"></div>
     <h2>
-      <a href="{{ page.url }}" style="border: none; !important;">{{ site.title }} -- {{ site.tagline }} </a>
+      <a href="{{ page.url }}" style="border: none; !important;">
+        {% if site.index_page_name %}
+          {{ site.index_page_name }}
+        {% else %}
+          {{ site.title }} -- {{ site.tagline }}
+        {% endif %}
+      </a>
     </h2>
     <!--
     <div id="postSpecs" style="letter-spacing: 0.1em;">
