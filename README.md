@@ -153,7 +153,7 @@ Twitter cards make it possible to attach images and post summaries to Tweets tha
 
 #### Styling help
 
-If you have never used kramdown before, just edit the _config.yml to something supported and something you know, or just learn kramdown from [this](http://kramdown.rubyforge.org/quickref.html) link. It's easy. No, really!
+If you have never used kramdown before, just edit the _config.yml to something supported and something you know, or just learn kramdown from [the quick reference sheet](http://kramdown.rubyforge.org/quickref.html) link or the much detailed [syntax page](http://kramdown.rubyforge.org/syntax.html). A better demo also available at [kramdown-sandbox.herokuapp.com](https://kramdown-sandbox.herokuapp.com/) It's easy. No, really!
 
 ## Questions?
 
