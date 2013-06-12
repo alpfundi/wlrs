@@ -1,7 +1,7 @@
 title:              wlrs
 tagline:            Jekyll Theme
 # Index will read this line instead of "title -- tagline" if uncommented
-# index:              This is a custom index header
+# index_page_name:    This is a custom index header
 description:        A responsive Jekyll theme.
 # Comment out url when working locally to resolve base urls correctly
 url:                http://execat.github.io/wlrs
