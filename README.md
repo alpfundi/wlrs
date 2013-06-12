@@ -1,6 +1,6 @@
 # wlrs
 
-This is a cleaned up version of [my setup](http://execat.github.io) as a theme. So here be that theme --- I call it **[wlrs](http://execat.github.io/wlrs)**, a responsive Jekyll theme.
+This is a cleaned up version of [my setup](http://execat.github.io) as a theme. So here be that theme --- I call it **[wlrs](http://execat.github.io/wlrs)**, a responsive Jekyll theme that does not contribute to global warming.
 
 ## wlrs is all about:
 
