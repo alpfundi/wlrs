@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    	<title>Theme Setup &#8211; wlrs</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="UTF-8" />
+	<meta name="description" content="Instructions on how to install and customize the Jekyll theme wlrs.">
+	<meta name="keywords" content="Jekyll, theme, responsive">
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/font.css" media="screen" />
+	<script src="/assets/js/blog.js" type="text/javascript"></script>
+	<link type="text/plain" rel="author" href="/humans.txt" />
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Refer to http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5">
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- Load Modernizr -->
+	<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+  </head>
+
+  <body id="blog">
+    <header id="sidebar">
+            <aside id="logo" class="clearfix">
+        <div class="clearfix">
+          <a href="/"></a>
+        </div>
+      </aside>
+      <ul id="user_meta">
+        <li class="blog_name">
+          <h1 id="blog_name">
+          <a href="/">wlrs's blog</a>
+          </h1>
+        </li>
+        <li class="tagline">
+          <h2 id="tagline">
+            Jekyll Theme
+          </h2>
+        </li>
+        <li class="link">
+          <a href="https://github.com/execat">github.com/execat</a>
+        </li>
+        <li class="link twitter">
+          <a href="https://twitter.com/execat" target="_blank">@execat</a>
+        </li>
+        <li class="link feed">
+          <a href="#">RSS feed</a>
+        </li>
+      </ul>
+      <aside id="linkback"><span class="linkback_text">Display this shit</span><strong><a href="#">Jekyll Theme</a></strong>
+        </a>
+      </aside>
+    </header>
+
+    <!-- <section>..</section> goes here -->
+    <section id="river" role="main">
+  <div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://execat.github.io/wlrs">wlrs</a>
+	</div>			<!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		    <ul>
+		        
+				<li><a href="http://execat.github.io/wlrs/about">About</a></li>
+		        
+				<li><a href="http://execat.github.io/wlrs/articles">Articles</a></li>
+		        
+				<li><a href="http://execat.github.io/wlrs/theme-setup">Theme Setup</a></li>
+		        
+		        <li><i class="icon-feed"></i> <a href="http://execat.github.io/wlrs/feed.xml" title="Atom/RSS feed">Feed</a>
+		    </ul>
+		</nav>
+	</div>			<!-- /.top-navigation -->
+</div>				<!-- /.navigation-wrapper -->
+  <header id="postedbar">
+    <div id="backhome">
+      <ul>
+        <li><a href="/">Homepage</a></li>
+      </ul>
+    </div>
+  </header>
+  <article id="sample_post" class="post">
+    <div id="datebar"></div>
+    <h2>
+      <a href="/theme-setup/index.html" style="border: none; !important;">Theme Setup</a>
+    </h2>
+    <div id="postSpecs" style="letter-spacing: 0.1em;">
+      706 words &#8226; reading time ??? minutes
+    </div>
+    <div id="likes" class="click_like"></div>
+    <p>
+      <p>General notes and suggestions for customizing wlrs.</p>
+
+<h2 id="basic-setup">Basic Setup</h2>
+
+<ol>
+  <li><a href="http://jekyllrb.com">Install Jekyll</a> if you haven’t already.</li>
+  <li>Fork the <a href="http://github.com/execat/wlrs/">wlrs repo</a></li>
+  <li>Make it your own and customize, customize, customize.</li>
+</ol>
+
+<p><a href="http://github.com/execat/wlrs" class="btn">wlrs on GitHub</a></p>
+
+<div class="highlight"><pre><code class="text">wlrs/
+├── _includes
+|    ├── author-bio.html    //bio stuff goes here
+|    ├── chrome-frame.html  //displays on IE8 and less
+|    ├── footer.html        //site footer
+|    ├── head.html          //site head
+|    ├── navigation.html    //site top nav
+|    └── scripts.html       //jQuery, plugins, GA, etc.
+├── _layouts
+|    ├── home.html          //homepage layout
+|    ├── page.html          //page layout
+|    ├── post-index.html    //post listing layout
+|    └── post.html          //post layout
+├── _posts
+├── assets
+|    ├── css          //preprocessed less styles. good idea to minify
+|    ├── img          //images and graphics used in css and js
+|    ├── js
+|    |   ├── main.js  //jQuery plugins and settings
+|    |   └── vendor   //all 3rd party scripts
+|    └── less
+├── images            //images for posts and pages
+├── about.md          //about page
+├── articles.md       //lists all posts from latest to oldest
+└── index.md          //homepage. lists 5 most recent posts
+</code></pre></div>
+
+<h2 id="customization">Customization</h2>
+
+<h3 id="configyml">_config.yml</h3>
+
+<p>Variables you want to update are: site name, description, url<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, owner info, and your Google Anayltics tracking id and webmaster tool verifications. Most of these variables are used in the .html files found in <em>_includes</em> if you need to add or remove anything.</p>
+
+<h3 id="adding-posts-and-pages">Adding Posts and Pages</h3>
+
+<p>There are two main content layouts: <em>post.html</em> (for posts) and <em>page.html</em> (for pages). Both have large <strong>feature images</strong> that span the full-width of the screen, and both are meant for text heavy blog posts (or articles).</p>
+
+<h4 id="feature-images">Feature Images</h4>
+
+<p>A good rule of thumb is to keep feature images<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> nice and wide so you don’t push the body text too far down. An image cropped around around 1024 x 512 pixels will keep file size down with an acceptable resolution for most devices. On my personal site I use <a href="https://github.com/scottjehl/picturefill">Picturefill</a> to serve the same image responsively in four different flavors (small, medium, large, and extra large). In the interest of keeping things simple with this theme I left that script out, but you can certainly <a href="https://github.com/mmistakes/made-mistakes#articles-and-pages">add it back in</a> or give <a href="http://adaptive-images.com/">Adaptive Images</a> a try.</p>
+
+<p>The two layouts make the assumption that the feature images live in the <em>images</em> folder. To add a feature image to a post or page just include the filename in the front matter like so.</p>
+
+<div class="highlight"><pre><code class="yaml"><span class="l-Scalar-Plain">image</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">feature</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">feature-image-filename.jpg</span>
+  <span class="l-Scalar-Plain">thumb</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">thumbnail-image.jpg</span> <span class="c1">#keep it square 200x200 px is good</span>
+</code></pre></div>
+
+<h4 id="thumbnails-for-og-and-twitter-cards">Thumbnails for OG and Twitter Cards</h4>
+
+<p>Post and page thumbnails work the same way. These are used by <a href="https://developers.facebook.com/docs/opengraph/">Open Graph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> meta tags found in <em>head.html</em>. If you don’t assign a thumbnail the default graphic <em>(default-thumb.png)</em> is used. I’d suggest changing this to something more meaningful — your logo or avatar are good options.</p>
+
+<h4 id="table-of-contents">Table of Contents</h4>
+
+<p>Any article or page that you want a <em>table of contents</em> to render insert the following HTML in your post before the actual content. <a href="http://kramdown.rubyforge.org/converter/html.html#toc">Kramdown will take care of the rest</a> and convert all headlines into a contents list.</p>
+
+<p class="notice"><strong>PS:</strong> The TOC is hidden on small devices because I haven’t gotten around to optimizing it. For now it only shows on tablets and desktop viewports…</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">&quot;table-of-contents&quot;</span> <span class="na">class=</span><span class="s">&quot;toc&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;delta&quot;</span><span class="nt">&gt;</span>Contents<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;drawer&quot;</span> <span class="na">markdown=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+*  Auto generated table of contents
+{:toc}
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span><span class="c">&lt;!-- /#table-of-contents --&gt;</span>
+</code></pre></div>
+
+<h4 id="videos">Videos</h4>
+
+<p>Video embeds are responsive and scale with the width of the main content block with the help of <a href="http://fitvidsjs.com/">FitVids</a>.</p>
+
+<p>Not sure if this only effects Kramdown or if it’s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the <code>&lt;iframe&gt;</code> tags and remove <code>allowfullscreen</code>. Example below:</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">&quot;560&quot;</span> <span class="na">height=</span><span class="s">&quot;315&quot;</span> <span class="na">src=</span><span class="s">&quot;http://www.youtube.com/embed/PWf4WUoMXwg&quot;</span> <span class="na">frameborder=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;/iframe&gt;</span>
+</code></pre></div>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Used to generate absolute urls in <em>sitemap.xml</em>, <em>feed.xml</em>, and for canonical urls in <em>head.html</em>. Don’t include a trailing <code>\</code> in your base url ie: http://mademistakes.com. When developing locally remove or comment out this line so local css, js, and images are used.<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Feature images supplied by <a href="http://www.lovetextures.com/">Love Textures</a><a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </p>
+  </article>
+  <footer id="paginate"></footer>
+  <footer><h6>&copy; 2013 Anuj More. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://execat.github.io/wlrs">wlrs</a> theme.</h6>
+</footer>
+</section>
+
+  </body>
+</html>
