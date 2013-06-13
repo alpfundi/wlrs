@@ -1675,7 +1675,7 @@ aside#logo div a {
 
 
 
-/* 600px wide ============================================== */
+
 @media only screen and (min-width: 37.5em) {
   .article-author-top {
     display: block;
@@ -1687,13 +1687,6 @@ aside#logo div a {
   }
   .article-author-bottom {
     display: none;
-  }
-  .top-navigation {
-    display: inline;
-    float: left;
-    width: 75%;
-    margin-left: 0%;
-    margin-right: 0%;
   }
 }
 
@@ -1715,53 +1708,4 @@ aside#logo div a {
     width: 12.5%;
     margin-left: 16.666666666666668%;
   }
-  .top-navigation {
-    display: inline;
-    float: left;
-    width: 66.66666666666667%;
-  }
-}
-
-
-
-
-
-.navigation-wrapper {
-  margin: 0 auto;
-  width: 100%;
-  padding: 2em 0 3em;
-  font-family: ProximaNova-Regular, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.top-navigation {
-  margin: 0 auto;
-  width: 100%;
-  display: inline;
-  float: left;
-  width: 83.33333333333334%;
-  margin-left: 8.333333333333334%;
-  margin-right: 8.333333333333334%;
-  margin-bottom: 1em;
-}
-.top-navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.top-navigation li {
-  list-style-type: none;
-  display: inline;
-  margin-right: 25px;
-}
-.top-navigation li:after {
-  content: ".";
-}
-.top-navigation li a {
-  decoration: none;
-  border-bottom: 0 solid transparent;
-}
-
-nav {
-	display: block;
 }
