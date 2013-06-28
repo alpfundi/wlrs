@@ -1566,7 +1566,7 @@ aside#logo, aside#logo div a, ul#user_meta a:hover span.link_logo_inside, ul#use
 }
 
 aside#logo div a {
-	background: transparent url('../../images/connect.png') center no-repeat;
+	background: transparent url('/images/connect.png') center no-repeat;
 }
 
 .voted_cl a {

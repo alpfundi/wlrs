@@ -10,7 +10,7 @@ This is a cleaned up version of [my setup](http://execat.github.io) as a theme. 
 * Large feature images for posts and pages.
 * Simple and clear permalink structure *(ie: domain.com/category/post-title)*
 
-![screenshot of wlrs theme](http://execat.github.io/wlrs/images/wlrs-theme-post-800.png)
+![screenshot of wlrs theme](http://execat.github.io/wlrs/images/wlrs-theme-post-600.jpg)
 
 General notes and suggestions for customizing wlrs.
 
