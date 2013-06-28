@@ -1463,43 +1463,55 @@ table tr:nth-child(even){background:#eee}
 
 @font-face {
 				font-family: 'ProximaNova-Regular';
+				src: url('fonts/Raleway-Regular.ttf');
+				/*
 				src: url('fonts/proximanova-regular.eot');
 				src: url('fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
 						 url('fonts/proximanova-regular.woff') format('woff'),
 						 url('fonts/proximanova-regular.ttf') format('truetype'),
 						 url('fonts/proximanova-regular.svg#proximanova-regular') format('svg');
+				*/
 				font-weight: normal;
 				font-style: normal;
 		}
 
 @font-face {
 				font-family: 'ProximaNova-Black';
+				src: url('fonts/Raleway-Heavy.ttf');
+				/*
 				src: url('fonts/proximanova-black.eot');
 				src: url('fonts/proximanova-black.eot?#iefix') format('embedded-opentype'),
 						 url('fonts/proximanova-black.woff') format('woff'),
 						 url('fonts/proximanova-black.ttf') format('truetype'),
 						 url('fonts/proximanova-black.svg#proximanova-black') format('svg');
+				*/
 				font-weight: normal;
 				font-style: normal;
 		}
 @font-face {
 				font-family: 'ProximaNova-Extrabld';
+				src: url('fonts/Raleway-ExtraBold.ttf');
+				/*
 				src: url('fonts/proximanova-extrabold.eot');
 				src: url('fonts/proximanova-extrabold.eot?#iefix') format('embedded-opentype'),
 						 url('fonts/proximanova-extrabold.woff') format('woff'),
 						 url('fonts/proximanova-extrabold.ttf') format('truetype'),
 						 url('fonts/proximanova-extrabold.svg#proximanova-extrabold') format('svg');
+				*/
 				font-weight: normal;
 				font-style: normal;
 		}
 
 		@font-face {
 				font-family: 'ProximaNova-Bold';
+				src: url('fonts/Raleway-Bold.ttf');
+				/*
 				src: url('fonts/proximanova-bold.eot');
 				src: url('fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
 						 url('fonts/proximanova-bold.woff') format('woff'),
 						 url('fonts/proximanova-bold.ttf') format('truetype'),
 						 url('fonts/proximanova-bold.svg#proximanova-bold') format('svg');
+				*/
 				font-weight: normal;
 				font-style: normal;
 		}
