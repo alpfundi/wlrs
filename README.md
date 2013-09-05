@@ -2,7 +2,7 @@
 
 This theme was forked from [execat](http://execat.github.io).
 
-I used it for my (site] (http://alain.fundi.me)--- work in progress...
+I used it for my [site](http://alain.fundi.me)--- work in progress...
 
 
 ## wlrs is all about:
