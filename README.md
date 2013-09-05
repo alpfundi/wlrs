@@ -171,5 +171,5 @@ Bear in mind that the fonts used in the theme are covered in their respective li
 * [Font Awesome License](http://fortawesome.github.io/Font-Awesome/license/): SIL
 * [Montserrat](http://montserrat.zkysky.com.ar/en/the_project): SIL
 
-If you'd like give me credit somewhere on your blog or tweet a shout out to
-[@execat](https://twitter.com/execat), that would be pretty sweet.
+You can give credit somewhere on your blog or tweet a shout out to
+[@execat](https://twitter.com/execat), if you like the theme.
