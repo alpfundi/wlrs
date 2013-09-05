@@ -1,6 +1,9 @@
 # wlrs
 
-This is a cleaned up version of [my setup](http://execat.github.io) as a theme. So here be that theme --- I call it **[wlrs](http://execat.github.io/wlrs)**, a responsive Jekyll theme that does not contribute to global warming.
+This theme was forked from [execat](http://execat.github.io).
+
+I used it for my (site] (http://alain.fundi.me)--- work in progress...
+
 
 ## wlrs is all about:
 
@@ -20,7 +23,7 @@ General notes and suggestions for customizing wlrs.
 2. Fork the [wlrs repo](http://github.com/execat/wlrs/)
 3. Make it your own and customize, customize, customize.
 
-## [Preview the Theme](http://execat.github.io/wlrs)
+
 
 ``` bash
 wlrs/
